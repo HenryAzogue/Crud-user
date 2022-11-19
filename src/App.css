@@ -1,0 +1,171 @@
+:root {
+  --c1: #F2F2F2;
+  --c2: #1E1919;
+  --c3: #F2C84B;
+  --c4: #4992F2;
+  --c5: #056CF2;
+  --hr: #E6F5E2;
+  --edit: #E4F0F0;
+  --delet: #8F2618;
+  --fm-n1: Georgia, 'Times New Roman', Times, serif;
+}
+/*---------------------------------------App--------------------------------*/
+.App {
+  display: grid;
+  grid-template-columns: auto 25%;
+}
+.App__div {
+  width: 100%;
+  /* height: 100vh; */
+}
+.App__div-c3 {
+  background-color: var(--c3);
+}
+
+/*---------------------------------UserList---------------------------------*/
+.section__list {
+  width: 100%;
+  padding: 1.55rem;
+}
+.list__header {
+  padding: 2rem 0;
+
+}
+.header__h1 {
+  font-size: 2.55em;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  color: var(--c2);
+}
+.list__ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 5px;
+}
+.section__card {
+  background-color: var(--c4);
+  padding: 5px;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.card__header {
+  color: var(--c1);
+  font-family: var(--fm-n1);
+  text-align: justify;
+}
+.card__h2 {
+  font-size: 1.25em;
+  font-weight: 600;
+  text-align: center;
+}
+.hr {
+  border: solid 1px var(--hr);
+  margin: 0.5rem 0;
+}
+.card__div {
+  margin: 0 0.5rem;
+}
+.div__p {
+  color: var(--c2);
+  font-size: 0.75em;
+  letter-spacing: 0.1rem;
+  margin: 0.25rem 0;
+}
+.div__p-data {
+  color: var(--c1);
+  font-weight: 600;
+  font-size: 1em;
+  letter-spacing: 0;
+}
+.div__p-data i {
+  margin-right: 0.5rem;
+}
+.card__btn {
+  display: flex;
+  justify-content: end;
+}
+.btn {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+}
+.btn__delete {
+  background-color: var(--delet);
+  color: rgb(182, 182, 182);
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+.btn__edit {
+  background-color: var(--edit);
+  color: rgb(182, 182, 182);
+  border-radius: 5px;
+}
+
+/*--------------------------------UseForm------------------------------*/
+
+.App__div-c1 {
+  background-color: var(--c1);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding:  2.75rem 0;
+}
+.form__container {
+  background-color: var(--edit);
+  margin-top: 2rem;
+  padding: 0.5rem;
+  width: 85%;
+}
+
+.container__section {
+  /* background-color: limegreen; */
+}
+
+.section__header {
+  text-align: center;
+}
+.header__h2 {
+  color: var(--c2);
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
+  font-variant: small-caps;
+}
+
+.section__div {
+  padding:0 0.5rem;
+}
+
+.div__input {
+  text-rendering: optimizeLegibility;
+}
+.div__input label {
+  font-size: 0.95em;
+  font-variant: small-caps;
+  padding: 0.5rem 0;
+}
+.div__input input {
+  background-color: var(--c4);
+  color: var(--c1);
+  font-family: var(--fm-n1);
+  padding: 0.5rem;
+  border-radius: 15px;
+  width: 100%;
+}
+.div__input input {
+  border: var(--c1-moon) solid 1px;
+}
+.div__btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.div__btn {
+  background-color: var(--c5);
+  color: var(--edit);
+  padding: 0.75rem 0;
+  border-radius: 1.5rem;
+  width: 100%;
+  margin: 1.75rem 0;
+}
